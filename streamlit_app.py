@@ -5,14 +5,18 @@ import numpy as np
 from aitextgen import aitextgen
 
 st.title('Writer buddy')
-st.subheader('An app which helps you to write better or some inspiration')
+
+st.subheader('An app which helps you to write better')
+
 st.text('This app is just for educational purpose')
 
 # instantiate the model / download
 ai = aitextgen()
 
 # create a prompt text for the text generation 
+
 #prompt_text = "Python is awesome"
+
 prompt_text = st.text_input(label = "Enter your story",
             value = "One upon a king")
 
@@ -22,8 +26,8 @@ with st.spinner("Generating suggestions for you"):
             max_length = 1000)
             
 st.success("Suggestions has been created")
+
 st.balloons()
+
 st.text(gpt_text)
-
-
 
