@@ -1,9 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import tensorflow as tf
-from transformers import TFGPT2LMHeadModel, GPT2Tokenizer
-
 
 st.title('Writer buddy')
 st.subheader('An app which helps you to write better')
@@ -12,8 +9,6 @@ st.text_area('Write your text')
 st.button('Suggest')
 
 st.text(ot)
-
-
 
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 
