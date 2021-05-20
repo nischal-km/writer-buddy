@@ -1,4 +1,2 @@
 streamlit
-tensorflow==2.4.1
-transformers>=3.1.0
 aitextgen==0.3.0
