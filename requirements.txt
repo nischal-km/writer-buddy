@@ -1,3 +1,3 @@
-streamlit>=0.62.1
+streamlit
+tensorflow
 transformers>=3.1.0
-tensorflow==2.1
