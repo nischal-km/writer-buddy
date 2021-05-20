@@ -11,8 +11,18 @@ st.button('Suggest')
 
 # Without any parameters, aitextgen() will download, cache, and load the 124M GPT-2 "small" model
 # Without any parameters, aitextgen() will download, cache, and load the 124M GPT-2 "small" model
-ai = aitextgen()
-ai.generate()
-ai.generate(n=3, max_length=100)
-ai.generate(n=3, prompt="I believe in unicorns because", max_length=100)
-st.text(ai.generate_to_file(n=10, prompt="I believe in unicorns because", max_length=100, temperature=1.2))
+
+# create a prompt text for the text generation 
+prompt_text = st.text_input(label = "Enter your prompt text...",
+            value = "Computer is beautiful")
+
+with st.spinner("AI is at Work........"):
+    # text generation
+    gpt_text = ai.generate_one(prompt=prompt_text,
+            max_length = 100 )
+st.success("AI Successfully generated the below text ")
+st.balloons()
+# print ai generated text
+print(gpt_text)
+
+st.text(gpt_text)
