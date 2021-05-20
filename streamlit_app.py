@@ -18,7 +18,7 @@ ai = aitextgen()
 #prompt_text = "Python is awesome"
 
 prompt_text = st.text_input(label = "Enter your story",
- )
+ value ="once upon a time")
 
 with st.spinner("Generating suggestions for you"):
     # text generation
