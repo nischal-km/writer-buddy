@@ -1,2 +1,1 @@
 streamlit
-aitextgen==0.3.0
