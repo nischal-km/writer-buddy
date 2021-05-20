@@ -1,4 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-st.title('Uber pickups in NYC')
+st.title('Writer buddy')
+st.subheader('An app which helps you to write better')
+
