@@ -9,10 +9,11 @@ st.subheader('An app which helps you to write better or some inspiration')
 st.text('This app is just for educational purpose')
 st.button('Suggest')
 
-# Without any parameters, aitextgen() will download, cache, and load the 124M GPT-2 "small" model
-# Without any parameters, aitextgen() will download, cache, and load the 124M GPT-2 "small" model
+# instantiate the model / download
+ai = aitextgen()
 
 # create a prompt text for the text generation 
+#prompt_text = "Python is awesome"
 prompt_text = st.text_input(label = "Enter your prompt text...",
             value = "Computer is beautiful")
 
